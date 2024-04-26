@@ -57,6 +57,7 @@ h1{
     height: 100%;
     width: 400px;
     font-size: 30px;
+    text-align: center;
 }
 
 .box1:hover{
@@ -80,5 +81,53 @@ h1{
 .result h1{
     font-size: 40px;
     margin-top: 20px;
-    color: ;
+}
+
+@media (max-width: 480px) {
+    body{
+        padding: 0 6dvw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main{
+        width: 80dvw;
+        flex-direction: column;
+        height: 50dvh;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .select{
+        width: 80dvw;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    .box1, .box2{
+        width: 90px;
+        height: 90px;
+        font-size: 13px;
+    }
+
+    .output{
+        width: 100%;
+        font-size: 27px;
+    }
+
+    .result h1{
+        font-size: 30px;
+    }
+    
+    .box1:hover, .box2:hover{
+        background-color: transparent;
+        color: rgb(222, 136, 24);
+    }
+
+    .box1:active, .box2:active{
+        background-color: rgb(222, 136, 24);
+        color: white;
+    }
 }
