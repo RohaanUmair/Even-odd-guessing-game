@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the number would be even or odd?</h1>
+    <div class="main">
+        <div class="select">
+            <div class="box1" onclick="even()">
+                <div class="even"><h2>EVEN</h2></div>
+            </div>
+            <div class="box2" onclick="odd()">
+                <div class="odd"><h2>ODD</h2></div>
+            </div>
+        </div>
+        <div class="output">
+            <h3 id="userSelect">User Selected: </h3>
+            <h3 id="random">Number: </h3>
+        </div>
+    </div>
+    <div class="result">
+        <h1 id="result">-</h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
